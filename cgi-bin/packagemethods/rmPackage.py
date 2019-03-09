@@ -13,10 +13,10 @@ def main():
 
     with open(os.path.join(os.pardir, "data", "packages.json")) as json_package:
         json_data json.load(json_package)
-        for i in json_package:
-            if(json_data[i]["Name"] == name and json_data[i]["Warehouse"] == warehouse and json_data[i]["ShelfNum"] == ShelfNum
+        for i in json_data:
+            if json_data[i]["Name"] == name and json_data[i]["Warehouse"] == warehouse and json_data[i]["ShelfNum"] == ShelfNum
                 json_package.remove(i)
-        json.dump(json_data, json_package,indent=4, sortkeys=False)
+                json.dump(json_data, json_package,indent=4, sortkeys=False)
 
 
 if __name__ == "__main__":

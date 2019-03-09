@@ -5,10 +5,11 @@ import json
 import os
 
 def main():
+    
     form = cgi.FieldStorage()
 
-    with open(os.path.join(os.pardir, "data", "packages.json")) as json_package:
-            data = json.load(json_package)
+    with open(os.path.join(os.pardir, "data", "packages.json")) as json_file:
+            data = json.load(json_file)
     
     print(data)
     
