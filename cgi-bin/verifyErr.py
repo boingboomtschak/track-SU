@@ -9,7 +9,7 @@ def main():
     errDes = form.getkey("Error Description")
     reportedBy = form.getkey("Employee Name")
     empID = form.getkey("Employee ID"]
-    err {}
+    err = {}
     err["Error Description"] = errDes
     err["Employee Name"] = reportedBy
     err["Employee ID"] = empID

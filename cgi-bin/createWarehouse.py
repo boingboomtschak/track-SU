@@ -18,7 +18,7 @@ def main():
     with open(os.path.join(os.pardir, "data", "warehouses.json")) as json_file:
         jsondata = json.load(json_file)
         jsondata.append(warehouse)
-        json.dump(jsondata, json_file, indent=4 sort_keys=False)
+        json.dump(jsondata, json_file, indent=4, sort_keys=False)
     
 
 if __name__ == "__main__":
