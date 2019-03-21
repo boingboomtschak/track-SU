@@ -2,7 +2,7 @@
 #include <BreakoutSDK.h>
 
 static const char *device_purpose = "Dev-Kit";
-static const char *psk_key = "f2c4a9593beecab98b6c18c912d0b487";
+static const char *psk_key = "PSK KEY HERE";
 
 Breakout *breakout = &Breakout::getInstance();
 
